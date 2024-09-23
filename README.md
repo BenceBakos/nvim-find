@@ -1,3 +1,6 @@
+# Why this fork
+This fork added "find" as a fallback option to make this plugin dependency-free.
+
 # Notice
 
 I am no longer maintaining this plugin. To my knowledge, it still
