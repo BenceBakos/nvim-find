@@ -18,9 +18,9 @@ local function get_source(name)
 end
 
 local function get_best_file_source()
-  if executable("find") then return get_source("find") end
   if executable("fd") then return get_source("fd") end
   if executable("rg") then return get_source("rg_files") end
+  if executable("find") then return get_source("find") end
 end
 
 local file_source = nil
