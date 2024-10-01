@@ -47,7 +47,7 @@ function rg.files(state)
 		end
 
 		if stdout ~= "" then
-			coroutine.yield({ as_string = stdout:gsub(rg.cwd,'') })
+			coroutine.yield({ as_string = stdout })
 		else
 			coroutine.yield(async.pass)
 		end
