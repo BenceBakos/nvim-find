@@ -1,5 +1,6 @@
 # Why this fork
-This fork added "find" as a fallback option to make this plugin dependency-free.
+ - This fork added "find" as a fallback option to make this plugin dependency-free.
+ - `ripgrep` is made primer for files search, and got an option `alternative_paths={'path/to/alternative'}` to support multiple directories where we fuzzy find files
 
 # Notice
 
@@ -97,6 +98,9 @@ cgf.files.ignore = {}
 
 -- start with all result groups collapsed
 cfg.search.start_closed = false
+
+-- fuzzy find file in these paths too(list of directory paths as table)
+cfg.alternative_paths = { '~/notes' }
 ```
 
 # Finders
