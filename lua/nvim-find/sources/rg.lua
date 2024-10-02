@@ -26,12 +26,10 @@ function rg.grep(state)
 	end
 end
 
-rg.cwd = vim.fn.getcwd()
-
 function rg.files(state)
 	local params = {
 		'--files',
-		rg.cwd
+		'./'
 	}
 
 	if config.alternative_paths ~= nil and next(config.alternative_paths) ~= nil then
